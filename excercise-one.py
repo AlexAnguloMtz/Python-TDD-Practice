@@ -8,12 +8,13 @@
 def ask_float(prompt_message):
     return float(input(prompt_message))
 
-def calculate_BMI(weight_kg, height_meters):
+def body_mass_index(weight_kg, height_meters):
     return (weight_kg / pow(height_meters, 2))
 
 def main():
     weight_kg = ask_float('Enter your weight in kg: ')
     height_meters = ask_float('Enter your height in meters: ')
-    print(f'Your BMI is: {calculate_BMI(weight_kg, height_meters):.2f}')
+    calculated_body_mass_index = body_mass_index(weight_kg, height_meters)
+    print(f'Your body mass index is: {calculated_body_mass_index:.2f}')
 
 main()

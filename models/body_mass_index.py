@@ -1,4 +1,4 @@
-from Assert import Assert
+from utils.assertions import Assert
 
 class BodyMassIndex:
 

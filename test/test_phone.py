@@ -1,5 +1,5 @@
 import unittest
-from Phone import Phone, InvalidPhoneException
+from models import Phone, InvalidPhoneException
 
 class PhoneTest(unittest.TestCase):
     

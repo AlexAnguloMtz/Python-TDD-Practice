@@ -1,5 +1,5 @@
 import unittest
-from BodyMassIndex import BodyMassIndex
+from models import BodyMassIndex
 
 class BodyMassIndexTest(unittest.TestCase):
     

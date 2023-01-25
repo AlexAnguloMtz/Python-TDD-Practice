@@ -6,11 +6,13 @@ Write a program to ask the user for a phone number
 with this format and show the phone with no prefix or extension
 """
 
-from Phone import Phone
+from models.phone import Phone
 
 def main():
     phone = Phone(input('Enter your phone number: '))
     print(f'Your phone number is: {phone.value}')
 
-main()
-
+try: 
+    main()
+except Exception as exception:
+    print(exception)

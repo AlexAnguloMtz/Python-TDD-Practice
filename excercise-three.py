@@ -26,8 +26,11 @@ class Phone:
         self._extension = phone_parts[2]
     
     def validate(self, formatted_phone):
-        if (not self._PATTERN.match(formatted_phone)):
+        if (not self.is_valid_phone(formatted_phone)):
             raise Exception(f'Invalid phone: {formatted_phone}')
+
+    def is_valid_phone(self, formatted_phone):
+        return self._PATTERN.match(formatted_phone)
 
     @property
     def prefix(self):

@@ -21,7 +21,7 @@ class Phone:
         if (not (isinstance(formatted_phone, str))):
             raise TypeError('Phone must be a string')
         if (not self.is_valid_phone(formatted_phone)):
-            raise Exception(f'Invalid phone: {formatted_phone}')
+            raise InvalidPhoneException(f'Invalid phone: {formatted_phone}')
 
     def is_valid_phone(self, formatted_phone):
         return self._PATTERN.match(formatted_phone)
@@ -37,3 +37,6 @@ class Phone:
     @property
     def extension(self):
         return self._extension
+    
+class InvalidPhoneException(Exception):
+    pass

@@ -1,5 +1,5 @@
 import unittest
-from Phone import Phone
+from Phone import Phone, InvalidPhoneException
 
 class PhoneTest(unittest.TestCase):
     
@@ -15,8 +15,8 @@ class PhoneTest(unittest.TestCase):
         phone = Phone('+52-6622778899-78')
         self.assertEqual('78', phone.extension)
 
-    def test_should_raise_exception_for_invalid_phone_format(self):
-        self.assertRaises(Exception, lambda: Phone('2-45-89'))
+    def test_should_raise_invalid_phone_exception_for_invalid_phone_format(self):
+        self.assertRaises(InvalidPhoneException, lambda: Phone('2-45-89'))
 
     def test_should_raise_type_error_for_invalid_input_type(self):
         self.assertRaises(TypeError, lambda: Phone(6622778899))

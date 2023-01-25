@@ -17,6 +17,12 @@ class PhoneTest(unittest.TestCase):
 
     def test_should_raise_exception_for_invalid_phone_format(self):
         self.assertRaises(Exception, lambda: Phone('2-45-89'))
+
+    def test_should_raise_type_error_for_invalid_input_type(self):
+        self.assertRaises(TypeError, lambda: Phone(6622778899))
+        self.assertRaises(TypeError, lambda: Phone(True))
+        self.assertRaises(TypeError, lambda: Phone([]))
+        self.assertRaises(TypeError, lambda: Phone({}))
         
 if __name__ == '__main__':
     unittest.main()

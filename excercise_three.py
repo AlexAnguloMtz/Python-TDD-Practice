@@ -6,7 +6,6 @@ Write a program to ask the user for a phone number
 with this format and show the phone with no prefix or extension
 """
 
-import re
 from Phone import Phone
 
 def main():

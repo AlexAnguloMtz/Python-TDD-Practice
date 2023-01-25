@@ -3,6 +3,8 @@ A Phone object is an immutable Value Object with 3 parts:
 prefix, value and extension, separated by hyphens. 
 Each of these parts is a field in this class.
 """
+import re
+
 class Phone:
 
     _PHONE_REGEX = '^[+]?[\d]{2}-[\d]{10}-[\d]{2}$'

@@ -9,8 +9,8 @@ with this format and show the phone with no prefix or extension
 """
 
 """
-Immutable class to represent a Phone.
-A Phone has 3 parts: prefix, value and extension.
+A Phone object is an immutable Value Object with 3 parts:
+prefix, value and extension, separated by hyphens. 
 Each of these parts is a field in this class.
 """
 class Phone:

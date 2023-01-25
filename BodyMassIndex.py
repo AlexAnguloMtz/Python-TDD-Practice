@@ -1,4 +1,4 @@
-class BMI():
+class BodyMassIndex():
 
     @staticmethod
     def calculate(weight_kg, height_meters):

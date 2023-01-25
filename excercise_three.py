@@ -26,6 +26,8 @@ class Phone:
         self._extension = phone_parts[2]
     
     def validate(self, formatted_phone):
+        if (not (isinstance(formatted_phone, str))):
+            raise Exception('Phone must be a string')
         if (not self.is_valid_phone(formatted_phone)):
             raise Exception(f'Invalid phone: {formatted_phone}')
 

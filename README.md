@@ -1,6 +1,6 @@
 # Description
 These are some Python excercises to practice 
-Test-Driven-Development and string manipulations
+Test Driven Development and string manipulations
 
 # How to run the tests
 1) Open the project's root directory

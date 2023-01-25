@@ -5,7 +5,7 @@ Each of these parts is a field in this class.
 """
 class Phone:
 
-    _PHONE_REGEX = '^[+]?[\d]{2}-[\d]{1,10}-[\d]{2}$'
+    _PHONE_REGEX = '^[+]?[\d]{2}-[\d]{10}-[\d]{2}$'
     _PATTERN = re.compile(_PHONE_REGEX)
 
     def __init__(self, formatted_phone):

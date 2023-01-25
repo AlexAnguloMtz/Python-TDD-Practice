@@ -1,5 +1,5 @@
 # Description
-These are some python excercises to practice 
+These are some Python excercises to practice 
 Test-Driven-Development and string manipulations
 
 # How to run the tests

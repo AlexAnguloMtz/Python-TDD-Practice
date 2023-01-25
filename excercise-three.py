@@ -27,7 +27,7 @@ class Phone:
     
     def validate(self, formatted_phone):
         if (not self._PATTERN.match(formatted_phone)):
-            raise Error(f'Invalid phone: {formatted_phone}')
+            raise Exception(f'Invalid phone: {formatted_phone}')
 
     @property
     def prefix(self):

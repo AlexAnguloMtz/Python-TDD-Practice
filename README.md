@@ -15,5 +15,5 @@ Then the tests will run and the results will be printed on the command line
 1) Open the project's root directory
 2) Run any of the excercises with the standard command to do so. For example: 
 ```
-python3 excercise_one.py
+python3 exercise_one.py
 ```
